@@ -23,10 +23,11 @@
 
         private void OnLoaded(object sender, RoutedEventArgs e)
         {
-            bool featureFoundA = ApplicationFeatures.HasFeatures(FeaturesTyp.Features1);
+            FeaturesTyp featureA = FeaturesTyp.Features1;
+            bool featureFoundA = ApplicationFeatures.HasFeatures(featureA);
             if (featureFoundA == true)
             {
-                FeaturesResult result = ApplicationFeatures.Get(FeaturesTyp.Features1);
+                FeaturesResult result = ApplicationFeatures.Get(featureA);
                 if (result != null)
                 {
                     this.BtnFunktionA.Visibility = Visibility.Visible;
@@ -38,10 +39,11 @@
                 this.BtnFunktionA.Visibility = Visibility.Collapsed;
             }
 
-                bool featureFoundB = ApplicationFeatures.HasFeatures(FeaturesTyp.Features2);
+            FeaturesTyp featureB = FeaturesTyp.Features2;
+            bool featureFoundB = ApplicationFeatures.HasFeatures(featureB);
             if (featureFoundB == true)
             {
-                FeaturesResult result = ApplicationFeatures.Get(FeaturesTyp.Features2);
+                FeaturesResult result = ApplicationFeatures.Get(featureB);
                 if (result != null)
                 {
                     this.BtnFunktionB.Visibility = Visibility.Visible;

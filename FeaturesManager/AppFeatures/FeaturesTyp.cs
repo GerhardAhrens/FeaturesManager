@@ -17,7 +17,7 @@ namespace FMDemo.Features
 {
     using System;
 
-    public enum FeaturesTyp
+    public enum FeaturesTyp : int
     {
         [Feature("C8363A8B-4456-4A58-BAA8-CCDB19B4EF0C","Feature A")]
         Features1 = 1,
